@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programação - I Simpósio AgroZoo</title>
+  <meta name="description" content="Programação dos três dias do I Simpósio AgroZoo.">
+  <meta name="theme-color" content="#122e50">
+  <link rel="icon" href="assets/agrozoo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="event-data.js" defer></script>
+  <script src="app.js" defer></script>
+  <noscript>
+    <style>
+      @media (max-width: 800px) {
+        .header-inner { height: auto; flex-wrap: wrap; padding-block: 16px; }
+        #main-nav { display: flex; position: static; flex-wrap: wrap; box-shadow: none; border: 0; padding: 0; width: 100%; gap: 8px; }
+        #main-nav a { padding-inline: 12px; }
+        .menu-button { display: none; }
+        .site-header { position: relative; }
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="I Simpósio AgroZoo, início"><img class="header-logo" src="assets/agrozoo.png" alt="I Simpósio AgroZoo" width="1690" height="2172"></a><button id="menu-button" class="menu-button" aria-controls="main-nav" aria-expanded="false">Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav id="main-nav" aria-label="Navegação principal"><a href="programacao.html">Programação</a><a href="submissao.html">Submissão de trabalhos</a><a href="contato.html">Contato</a><a class="button nav-cta" href="inscricoes.html">Inscreva-se</a></nav></div></header>
+
+  <main id="conteudo">
+    <section class="program-section" id="programacao" aria-labelledby="program-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><h2 id="program-title">Programação</h2></div>
+        </div>
+        <nav class="day-navigation" aria-label="Dias da programação">
+          <a href="#dia-1"><span>DIA 1</span><strong data-day-date="0">25 NOV</strong><span>Palestra e mesa-redonda <span aria-hidden="true">↘</span></span></a>
+          <a href="#dia-2"><span>DIA 2</span><strong data-day-date="1">26 NOV</strong><span>Minicursos <span aria-hidden="true">↘</span></span></a>
+          <a href="#dia-3"><span>DIA 3</span><strong data-day-date="2">27 NOV</strong><span>Apresentação de trabalhos <span aria-hidden="true">↘</span></span></a>
+        </nav>
+
+        <section id="dia-1" class="day-section" aria-labelledby="day-title-1"><div class="day-side"><span class="day-index">01</span><div><h2 id="day-title-1">Dia 1</h2><p data-full-day="0">25 de novembro</p><span class="weekday" data-weekday="0">Quarta-feira</span><p class="day-location" data-day-location="0">Campus Umuarama</p></div></div><div class="day-body"><div class="schedule-panel"><div class="panel-heading"><h3>Programação - Dia 1</h3></div><div id="schedule-1"><ol class="schedule-list"><li><span class="time-range"><time datetime="18:00">18:00</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="18:30">18:30</time></span><div>Credenciamento e boas-vindas</div></li><li><span class="time-range"><time datetime="18:30">18:30</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="19:30">19:30</time></span><div>Palestra de abertura</div></li><li><span class="time-range"><time datetime="19:30">19:30</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="20:00">20:00</time></span><div>Coffee Break</div></li><li><span class="time-range"><time datetime="20:00">20:00</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="21:30">21:30</time></span><div>Mesa-redonda</div></li></ol></div></div><div class="detail-panel" hidden><h3>Mesa-redonda</h3><div id="roundtables"></div></div></div></section>
+
+        <section id="dia-2" class="day-section" aria-labelledby="day-title-2"><div class="day-side"><span class="day-index">02</span><div><h2 id="day-title-2">Dia 2</h2><p data-full-day="1">26 de novembro</p><span class="weekday" data-weekday="1">Quinta-feira</span><p class="day-location" data-day-location="1">Campus Umuarama</p></div></div><div class="day-body"><div class="schedule-panel"><div class="panel-heading"><h3>Programação - Dia 2</h3></div><div id="schedule-2"><ol class="schedule-list"><li><span class="time-range"><time datetime="18:00">18:00</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="18:30">18:30</time></span><div>Credenciamento</div></li><li><span class="time-range"><time datetime="18:00">18:00</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="22:00">22:00</time></span><div>Minicursos</div></li></ol></div></div><div class="detail-panel"><h3>Minicursos</h3><div id="courses"><article class="course"><h4>Tecnologias na Agricultura - Mapeamento, GPS, Satélites e Drone</h4></article><article class="course"><h4>Manejo Integrado de Pragas e Doenças - MIP&amp;D</h4></article><p class="courses-notice">Mais informações em breve</p></div></div></div></section>
+
+        <section id="dia-3" class="day-section" aria-labelledby="day-title-3"><div class="day-side"><span class="day-index">03</span><div><h2 id="day-title-3">Dia 3</h2><p data-full-day="2">27 de novembro</p><span class="weekday" data-weekday="2">Sexta-feira</span><p class="day-location" data-day-location="2">Campus Glória</p></div></div><div class="day-body"><div class="schedule-panel"><div class="panel-heading"><h3>Programação - Dia 3</h3></div><div id="schedule-3"><ol class="schedule-list"><li><span class="time-range"><time datetime="11:30">11:30</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="13:30">13:30</time></span><div>Venda de almoço</div></li><li><span class="time-range"><time datetime="13:30">13:30</time><span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="16:30">16:30</time></span><div>Apresentação de trabalhos</div></li></ol></div></div></div></section>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-banner"><img src="assets/rodape.png" alt="I Simpósio AgroZoo, 25 a 27 de novembro, Uberlândia - MG. Integração Lavoura-Pecuária: Inovação, Sustentabilidade e Produção. Realização: UFU, PET Agronomia e PET Zootecnia." width="2480" height="400" loading="lazy"></div><div class="container"><div class="footer-bottom"><span>© 2026 I Simpósio AgroZoo</span><a href="index.html">Voltar ao início <span aria-hidden="true">↑</span></a></div></div></footer>
+</body>
+</html>
