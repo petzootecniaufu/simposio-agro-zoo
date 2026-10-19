@@ -148,3 +148,15 @@
 .submission-files a{display:block;min-height:44px;padding-block:9px;line-height:1.6;width:100%;overflow-wrap:anywhere}
 .submission #submission-email a{display:inline-block;min-height:44px;padding-block:9px;line-height:1.6}
 #main-nav .nav-cta[aria-current='page']{color:var(--white);text-decoration:none}
+
+.submission>.submission-files:first-child{margin-top:0;padding-top:0;border-top:0}
+.submission-form-link{margin-top:16px}
+.submission-form-link a{font:400 16px/1.6 var(--sans)}
+.submission-email-fallback{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.submission-email-fallback>p{font:400 15px/1.6 var(--sans);color:var(--muted);margin-bottom:16px}
+.submission-form{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.submission-form h2,.submission-email-fallback h2{font:600 18px/1.5 var(--sans);color:var(--navy);letter-spacing:normal;margin:0}
+.submission-form .submission-form-link{margin-top:12px}
+.submission-form .button{color:var(--white);text-decoration:none;padding:13px 24px;font-weight:600}
+.submission-email-fallback .submission-email-notice{font:italic 400 13px/1.6 var(--sans);margin:8px 0 12px;color:var(--muted)}
+.submission-email-fallback #submission-email{margin:0}
