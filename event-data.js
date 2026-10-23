@@ -8,6 +8,7 @@ window.AGROZOO = {
   },
   "city": "Uberlândia - MG",
   "venue": "Campus Umuarama (25 e 26/11) e Campus Glória (27/11)",
+  "editalUrl": "https://docs.google.com/document/d/1v1nBm7lsRF43Ld3V9mPCZiyon_dPcIPq/edit?usp=drive_link&ouid=107920048582599012461&rtpof=true&sd=true",
   "formsUrl": "https://forms.gle/b8T4V2AvKk3bj64N6",
   "instagram": {
     "petagro": "https://www.instagram.com/petagroufu/",

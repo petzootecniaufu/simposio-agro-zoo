@@ -106,6 +106,14 @@
     }).join('');
   }
 
+  const editalLink = document.querySelector('#edital-link');
+  if (editalLink) {
+    const url = /^https?:\/\//i.test(data.editalUrl || '') ? safeUrl(data.editalUrl) : '';
+    editalLink.hidden = !url;
+    if (url) editalLink.href = url;
+    else editalLink.removeAttribute('href');
+  }
+
   const registrationLink = document.querySelector('#registration-link');
   if (registrationLink && safeUrl(data.formsUrl)) registrationLink.href = safeUrl(data.formsUrl);
   const socialLinks = document.querySelector('#social-links');
