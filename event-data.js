@@ -106,7 +106,7 @@ window.AGROZOO = {
       },
       {
         "title": "Exemplo de pôster",
-        "url": ""
+        "url": "https://docs.google.com/presentation/d/1E0zJBysVsDOJXUnY_uMq3i_fM9fdSOWS/edit?usp=drivesdk&ouid=107920048582599012461&rtpof=true&sd=true"
       }
     ]
   }
