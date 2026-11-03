@@ -8,7 +8,7 @@ window.AGROZOO = {
   },
   "city": "Uberlândia - MG",
   "venue": "Campus Umuarama (25 e 26/11) e Campus Glória (27/11)",
-  "editalUrl": "https://docs.google.com/document/d/1v1nBm7lsRF43Ld3V9mPCZiyon_dPcIPq/edit?usp=drive_link&ouid=107920048582599012461&rtpof=true&sd=true",
+  "editalUrl": "https://drive.google.com/file/d/1Wu3VfRjE8ZcD7L84ZVjmtzRnKGKAVVhE/view?usp=drivesdk",
   "formsUrl": "https://forms.gle/b8T4V2AvKk3bj64N6",
   "instagram": {
     "petagro": "https://www.instagram.com/petagroufu/",
@@ -98,11 +98,11 @@ window.AGROZOO = {
     "documents": [
       {
         "title": "Modelo de resumo",
-        "url": "https://docs.google.com/document/d/1VM3YhBnROd4jqOLj4tXmWGbg6ss5e80Q/edit?usp=drive_link&ouid=107920048582599012461&rtpof=true&sd=true"
+        "url": "https://drive.google.com/file/d/1L7wg0x7brEcX6HID7tGC7UCrNx8pKqNp/view?usp=drivesdk"
       },
       {
         "title": "Normativas para submissão de trabalhos",
-        "url": "https://drive.google.com/file/d/1mRlWFIdNI0Ep1LQIdMeZPhx8hJwfn4G5/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1cibDIDsZPfeHoxdCzC3V6PjNTDp7UUPd/view?usp=drivesdk"
       },
       {
         "title": "Exemplo de pôster",
