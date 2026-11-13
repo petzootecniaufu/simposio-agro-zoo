@@ -160,3 +160,4 @@
 .submission-form .button{color:var(--white);text-decoration:none;padding:13px 24px;font-weight:600}
 .submission-email-fallback .submission-email-notice{font:italic 400 13px/1.6 var(--sans);margin:8px 0 12px;color:var(--muted)}
 .submission-email-fallback #submission-email{margin:0}
+.submission-closed{margin-top:12px;color:var(--red);font:600 16px/1.6 var(--sans)}
