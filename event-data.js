@@ -37,7 +37,46 @@ window.AGROZOO = {
           "title": "Mesa-redonda"
         }
       ],
-      "roundtables": []
+      "lecture": {
+        "title": "Integração Lavoura e Pecuária: Inovação, Sustentabilidade e Produção",
+        "speaker": {
+          "name": "Manoel Eduardo Rozalino Santos",
+          "bio": "Possui graduação (2005), mestrado (2007) e doutorado (2009) em Zootecnia pela Universidade Federal de Viçosa. Atualmente, é Professor Titular na Faculdade de Medicina Veterinária e Zootecnia da Universidade Federal de Uberlândia (UFU). Desenvolve pesquisas sobre o manejo de pastagens, atuando principalmente nas seguintes áreas: suplementação de bovinos em pastejo, diferimento do uso de pastagens e manejo do pastejo. Realiza a divulgação científica sobre produção animal em pastagens, por meio da escrita de livros técnicos, participação em eventos e redes sociais.",
+          "photo": "assets/manoel-eduardo.jpg"
+        }
+      },
+      "roundtables": [
+        {
+          "title": "Integração Lavoura e Pecuária: Inovação, Sustentabilidade e Produção",
+          "moderator": {
+            "name": "Manoel Eduardo Rozalino Santos",
+            "bio": "Possui graduação (2005), mestrado (2007) e doutorado (2009) em Zootecnia pela Universidade Federal de Viçosa. Atualmente, é Professor Titular na Faculdade de Medicina Veterinária e Zootecnia da Universidade Federal de Uberlândia (UFU). Desenvolve pesquisas sobre o manejo de pastagens, atuando principalmente nas seguintes áreas: suplementação de bovinos em pastejo, diferimento do uso de pastagens e manejo do pastejo. Realiza a divulgação científica sobre produção animal em pastagens, por meio da escrita de livros técnicos, participação em eventos e redes sociais.",
+            "photo": "assets/manoel-eduardo.jpg"
+          },
+          "participants": [
+            {
+              "name": "Jardel Neri",
+              "bio": "Médico Veterinário (UNICENTRO), mestre em Nutrição de Ruminantes (UFLA), especialista em Nutrição de Vacas de Leite",
+              "photo": "assets/jardel-neri.png"
+            },
+            {
+              "name": "Rafael Marques de Souza",
+              "bio": "Zootecnista formado pela Universidade Federal de Uberlândia (UFU) em 2016, atua há mais de 10 anos no setor agropecuário, com experiência em gestão comercial, liderança de equipes e nutrição animal. Atuou como Supervisor de Unidade na Cooperativa Agroindustrial Consolata (COPACOL), no Paraná, e como Supervisor de Vendas no Alto Paranaíba, Minas Gerais, pela SCL Agro, do Grupo Scala, com foco na gestão de equipes comerciais no segmento de nutrição animal. Atualmente, exerce o cargo de Coordenador de Vendas na Cooperativa Central dos Produtores Rurais (CCPR), atuando nas regiões do Triângulo Mineiro e Alto Paranaíba, onde é responsável pela gestão da equipe comercial da empresa na região.",
+              "photo": "assets/rafael-marques.png"
+            },
+            {
+              "name": "Julio Ramos Reis",
+              "bio": "Médico-veterinário formado pela Universidade Federal de Uberlândia (UFU) em 2013, com especialização em Nutrição de Bovinos Leiteiros pelo REHAGRO, concluída em 2017. Possui experiência em assistência técnica e consultoria na área de produção e nutrição de bovinos leiteiros. Atuou como consultor do Projeto Educampo/Sebrae para a Danone, em Passos (MG), entre 2014 e 2015; para a Agroverde, em Campina Verde (MG), entre 2015 e 2019; e para a Scala, em Sacramento (MG), entre 2019 e 2020. Desde 2020, atua como Técnico de Gado de Leite na Topnutri Nutrição Animal, em Uberlândia (MG).",
+              "photo": "assets/julio-ramos.png"
+            },
+            {
+              "name": "Cynthia Correia Costa Gomide",
+              "bio": "Engenheira agrônoma e pecuarista, graduada em Agronomia pela Universidade de Brasília (UnB), com mestrado em Zootecnia pela Universidade Estadual Paulista (UNESP), em Jaboticabal (SP). Possui também bacharelado em Direito pelo Cesuc, em Catalão (GO), e MBA em Agronegócio pela USP/ESALQ, em Piracicaba (SP). Atuou por cinco anos na Embrapa Cerrados, no segmento de forragicultura, no âmbito de um convênio de cooperação entre a Embrapa, o CIAT e o IICA. Possui experiência na pecuária de corte, com atuação em cria, recria e engorda. Na área institucional, atua como diretora da Associação Mulheres do Agro de Catalão e Região e como diretora do Sindicato Rural de Catalão.",
+              "photo": "assets/cynthia-correia.png"
+            }
+          ]
+        }
+      ]
     },
     {
       "location": "Campus Umuarama",
