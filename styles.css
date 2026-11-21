@@ -161,3 +161,10 @@
 .submission-email-fallback .submission-email-notice{font:italic 400 13px/1.6 var(--sans);margin:8px 0 12px;color:var(--muted)}
 .submission-email-fallback #submission-email{margin:0}
 .submission-closed{margin-top:12px;color:var(--red);font:600 16px/1.6 var(--sans)}
+
+/* Minicursos: tema com inscrição, currículo e espaço reservado para foto. */
+.course .people{grid-template-columns:minmax(0,1fr);margin-top:16px}
+.course .person img,.course .photo-pending{flex-shrink:0;border-radius:4px}
+.course .person h5{font:600 14px/1.5 var(--sans);margin:0;color:var(--navy)}
+.course .person p{font-size:14px;line-height:1.7}
+.course h4 .course-link{font:inherit;line-height:inherit}
