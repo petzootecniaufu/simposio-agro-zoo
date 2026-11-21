@@ -1,5 +1,3 @@
-// Programação do evento. Datas ajustadas para 25-27/11 por confirmação do usuário.
-// Horários no formato HH:mm. formsUrl recebe o src do iframe oficial do Google Forms.
 window.AGROZOO = {
   "date": {
     "start": "2026-11-25",
@@ -57,23 +55,60 @@ window.AGROZOO = {
       ],
       "courses": [
         {
-          "title": "Tecnologias na Agricultura - Mapeamento, GPS, Satélites e Drone",
+          "title": "Manejo intensivo de pastagem",
           "description": "",
-          "instructor": null,
-          "registration": ""
+          "instructor": {
+            "name": "João Eduardo Ribeiro da Silva",
+            "bio": "Agrônomo com doutorado em fitotecnia. Atualmente professor universitário e consultor, nas áreas de cultivos agrícolas e pastagens. Atuou como assistente técnico e gerencial no ATeG Senar nas pecuária de leite e corte.",
+            "photo": "assets/joao-eduardo.jpg"
+          },
+          "registration": "",
+          "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScT09cpZ4gv1JHN8PHNSzy2fXg3nOeqxfp1KaUF-UX8YgDP6g/viewform"
+        },
+        {
+          "title": "Pecuária de precisão: robótica e automação de atividades zootécnicas",
+          "description": "",
+          "instructor": {
+            "name": "Flaviane Afonso Ferreira",
+            "bio": "Médica-veterinária formada pela Universidade Federal de Uberlândia (UFU) e atua há 10 anos como instrutora dos cursos de Bovinocultura do Serviço Nacional de Aprendizagem Rural de Minas Gerais (SENAR-MG).",
+            "photo": "assets/flaviane-afonso.jpg"
+          },
+          "registration": "",
+          "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdaZZFP0BmXHShPlMkLafMo6BG3E_JZCCFCrRI9ht10qgE1wA/viewform"
+        },
+        {
+          "title": "Tecnologias na Agricultura - Mapeamento, GPS, Satélites e Drones",
+          "description": "",
+          "instructor": {
+            "name": "José Renato Araujo",
+            "bio": "Possui graduação em Agronomia pela UNESP - Jaboticabal. MBA em Administração de empresas pela FUNDACE - USP. Especialização em Geoprocessamento pela IFTM - Uberaba, Professor da FAZU - Fundragri - Fundação Educacional para o desenvolvimento das ciências agrárias, Uberaba-MG nas disciplinas Desenho Técnico e Agricultura de Precisão (atualmente afastado). Está credenciado como instrutor do SENAR-MG, nos cursos GPS, controladores de precisão, mapeamento de propriedades, processamento de imagens de satélites, defensivo agrícola costal e tratorizado, cursos de gestão: custos de produção, pessoas, marketing e comercialização e gestão da produção.",
+            "photo": "assets/jose-renato.jpg"
+          },
+          "registration": "",
+          "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSddqXfmtGGpWJruaCtOgQlWhxW2G6uhRFFI9b7tDSMeCY0rrg/viewform"
         },
         {
           "title": "Manejo Integrado de Pragas e Doenças - MIP&D",
           "description": "",
-          "instructor": null,
-          "registration": ""
+          "instructor": {
+            "name": "Jocasta Gomes Lopes",
+            "bio": "Gestora em Agronegócio formada pela UNIPAC e Instrutora do Sistema FAEMG SENAR, com atuação técnica nas áreas de Manejo Integrado de Pragas e Doenças (MIP&D), Defensivos Agrícolas e Armazéns de Grãos.",
+            "photo": "assets/jocasta-gomes.jpg"
+          },
+          "registration": "",
+          "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJs9NtS_PGdXNl_mW_mObQpbdiG8OnBW1_bivJ555IdGfzQg/viewform"
         },
         {
-          "title": "Em breve",
+          "title": "Diploma não basta: Como se aproximar do mercado de trabalho",
           "description": "",
-          "instructor": null,
-          "registration": ""
-        }
+          "instructor": {
+            "name": "Jorge Machado",
+            "bio": "Engenheiro agrônomo formado pela Universidade Federal de Uberlândia (UFU), com mais de 10 anos de carreira no Agro e 6 anos em gestão comercial e de pessoas. Atua como Commercial Manager na ICL América do Sul e é fundador da plataforma Alavancagro (criada em 2024). Possui experiência em empresas de sementes, proteção de cultivos, nutrição, fisiologia e biológicos, tendo passado por Pioneer (produção de sementes), Monsanto (vendas), Stoller (vendas) e Bayer (vendas), além de ministrar treinamentos técnicos e de mercado em eventos de clientes.",
+            "photo": "assets/jorge-machado.jpg"
+          },
+          "registration": "",
+          "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeQVQvx1uWFohiiH4O8xPXCZbnXfvQSNPcdFEYe0OF7_2jQlw/viewform"
+        },
       ]
     },
     {

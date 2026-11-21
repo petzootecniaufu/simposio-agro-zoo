@@ -72,7 +72,7 @@
     scheduleRoot.innerHTML = `<ol class="schedule-list">${sorted.map((item) => `<li><span class="time-range"><time${item.time ? ` datetime="${escape(item.time)}"` : ''}>${escape(item.time || '')}</time>${item.endTime ? `<span aria-hidden="true">-</span><span class="sr-only"> às </span><time datetime="${escape(item.endTime)}">${escape(item.endTime)}</time>` : ''}</span><div>${escape(item.title || '')}${item.location ? `<small>${escape(item.location)}</small>` : ''}</div></li>`).join('')}</ol>`;
   });
 
-  const person = (profile, role) => `<article class="person">${safeUrl(profile.photo) ? `<img src="${escape(safeUrl(profile.photo))}" alt="${escape(profile.name || '')}" width="70" height="70" loading="lazy">` : ''}<div><h6>${escape(profile.name || '')}</h6><small>${escape(role || profile.role || '')}</small><p>${escape(profile.bio || '')}</p></div></article>`;
+  const person = (profile, role, heading = 'h6') => `<article class="person">${safeUrl(profile.photo) ? `<img src="${escape(safeUrl(profile.photo))}" alt="${escape(profile.name || '')}" width="70" height="70" loading="lazy"><span class="photo-pending" hidden>Foto em breve</span>` : '<span class="photo-pending">Foto em breve</span>'}<div><${heading}>${escape(profile.name || '')}</${heading}><small>${escape(role || profile.role || '')}</small>${profile.bio ? `<p>${escape(profile.bio)}</p>` : ''}</div></article>`;
 
   const roundtables = data.days?.[0]?.roundtables || [];
   const roundtableRoot = document.querySelector('#roundtables');
@@ -85,8 +85,24 @@
   const courses = data.days?.[1]?.courses || [];
   const courseRoot = document.querySelector('#courses');
   if (courseRoot && courses.length) {
-    courseRoot.innerHTML = courses.map((course) => course.title === 'Em breve' ? '<p class="courses-notice">Mais informações em breve</p>' : `<article class="course"><h4>${escape(course.title || '')}</h4>${course.description ? `<p>${escape(course.description)}</p>` : ''}<div class="people">${course.instructor ? person(course.instructor, 'Instrutor(a)') : ''}</div><p>${escape(course.registration || '')}</p>${safeUrl(course.registrationUrl) ? `<a class="course-link" href="${escape(safeUrl(course.registrationUrl))}" target="_blank" rel="noopener noreferrer">Inscrição no minicurso: ${escape(course.title || '')}</a>` : ''}</article>`).join('');
+    courseRoot.innerHTML = courses.map((course) => {
+      if (course.title === 'Em breve') return '<p class="courses-notice">Mais informações em breve</p>';
+      const registrationUrl = safeUrl(course.registrationUrl);
+      const title = escape(course.title || '');
+      const instructor = course.instructor || { name: 'Ministrante a confirmar', bio: 'Currículo em breve.' };
+      return `<article class="course"><h4>${registrationUrl ? `<a class="course-link" href="${escape(registrationUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Inscrição no minicurso: ${title}">${title}</a>` : title}</h4>${course.description ? `<p>${escape(course.description)}</p>` : ''}<div class="people">${person(instructor, 'Ministrante', 'h5')}</div>${course.registration ? `<p>${escape(course.registration)}</p>` : ''}</article>`;
+    }).join('');
   }
+
+  document.querySelectorAll('.person img').forEach((photo) => {
+    const showPlaceholder = () => {
+      photo.hidden = true;
+      const placeholder = photo.nextElementSibling;
+      if (placeholder?.classList.contains('photo-pending')) placeholder.hidden = false;
+    };
+    photo.addEventListener('error', showPlaceholder, { once: true });
+    if (photo.complete && photo.naturalWidth === 0) showPlaceholder();
+  });
 
   const submission = data.submission || {};
   const submissionInstructions = document.querySelector('#submission-instructions');
