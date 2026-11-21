@@ -74,10 +74,18 @@
 
   const person = (profile, role, heading = 'h6') => `<article class="person">${safeUrl(profile.photo) ? `<img src="${escape(safeUrl(profile.photo))}" alt="${escape(profile.name || '')}" width="70" height="70" loading="lazy"><span class="photo-pending" hidden>Foto em breve</span>` : '<span class="photo-pending">Foto em breve</span>'}<div><${heading}>${escape(profile.name || '')}</${heading}><small>${escape(role || profile.role || '')}</small>${profile.bio ? `<p>${escape(profile.bio)}</p>` : ''}</div></article>`;
 
+  const lecture = data.days?.[0]?.lecture;
+  const lectureRoot = document.querySelector('#lecture');
+  if (lectureRoot) {
+    lectureRoot.innerHTML = lecture ? `<article class="lecture"><h4>${escape(lecture.title || 'Palestra')}</h4><div class="people">${lecture.speaker ? person(lecture.speaker, 'Palestrante', 'h5') : ''}</div></article>` : '';
+    const panel = lectureRoot.closest('.detail-panel');
+    if (panel) panel.hidden = !lecture;
+  }
+
   const roundtables = data.days?.[0]?.roundtables || [];
   const roundtableRoot = document.querySelector('#roundtables');
   if (roundtableRoot) {
-    roundtableRoot.innerHTML = roundtables.map((table) => `<article class="roundtable"><h5>${escape(table.title || 'Mesa-redonda')}</h5><p>${escape(table.theme || '')}</p><div class="people">${table.moderator ? person(table.moderator, 'Mediação') : ''}${(table.participants || []).map((profile) => person(profile, 'Participante')).join('')}</div></article>`).join('');
+    roundtableRoot.innerHTML = roundtables.map((table) => `<article class="roundtable"><h4>${escape(table.title || 'Mesa-redonda')}</h4>${table.theme ? `<p>${escape(table.theme)}</p>` : ''}<div class="people">${table.moderator ? person(table.moderator, 'Mediador', 'h5') : ''}${(table.participants || []).map((profile) => person(profile, 'Participante', 'h5')).join('')}</div></article>`).join('');
     const panel = roundtableRoot.closest('.detail-panel');
     if (panel) panel.hidden = !roundtables.length;
   }
